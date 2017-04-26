@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+	<title>pacMan</title>
+	<style>
+		html {
+			height:100%;
+		}
+		body {
+			background-color:#FFFFFF;
+			margin:0;
+			height:100%;
+		}
+	</style>
+	<!-- copy these lines to your document head: -->
+
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, width=1000" />
+	
+<script>
+function checkPointForHit(xp, yp, x, y) { 
+var i, j, c = 0, npol = xp.length; 
+for (i = 0, j = npol-1; i < npol; j = i++) { 
+if ((((yp[i] <= y) && (y < yp[j])) || 
+((yp[j] <= y) && (y < yp[i]))) && 
+(x < (xp[j] - xp[i]) * (y - yp[i]) / (yp[j] - yp[i]) + xp[i])) { 
+c =!c; 
+} 
+} 
+return c; 
+}
+
+
+function shuffleArray(o){ 
+for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+return o;
+}
+
+//collection to array
+function collectionToArray(col){
+var arr = [];
+for(var i = 0; i < col.length; i++) arr.push(col[i]);
+return arr;
+}
+	</script>
+	
+
+	<!-- end copy -->
+  </head>
+  <body>
+	<!-- copy these lines to your document: -->
+
+	<div id="pactrump_hype_container" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;" aria-live="polite">
+		<script type="text/javascript" charset="utf-8" src="PacTrump.hyperesources/pactrump_hype_generated_script.js?3219"></script>
+	</div>
+
+	<!-- end copy -->
+	
+
+
+	<!-- text content for search engines: -->
+
+	<div style="display:none">
+
+		<div>Coins in game:</div>
+		<div></div>
+		<div>Lives left:</div>
+		<div>
+</div>
+		<div>¡Oh vaya! HAS PERDIDO.
+Como ves, hay cosas que no puedes cambiar.</div>
+		<div>Press F5
+</div>
+		<div>Clic para continuar</div>
+		<div>Merkel: Cállate hurenshon, convertiré EEUU en mi filial de Europa</div>
+		<div>Clinton: Saqué más votos que tú, y los volvería a sacar si se repiten elecciones</div>
+		<div>Siguiente
+</div>
+		<div>Kim Jong-un: Te voy a petar el ojete con una guerra nuclear, maldito yanki</div>
+		<div>OBJETIVODominar el mundo y sobrevivir a estos cuatro años de legislatura como presidente de EEUU, a través de un laberinto donde tienes que esquivar a tus fantasmas y comer puntos para alimentar tu ego.
+</div>
+		<div>INSTRUCCIONES DEL JUEGOEres Donald Trump, presidente de los Estados Unidos. Este juego es un clon del clásico Pacman, cómete todas las monedas y vigila a tus fantasmas para que ellos no te maten a ti.
+</div>
+		<div>Mexicanos: Ándale, ándale, te voy a joder el muro, viejo chingón</div>
+		<div>Musulmanes: Tendrás que ir a la Meca y hacer el Ramadán, cerdo infiel</div>
+		<div>Obamacare: Tu castigo será quitarte todo el bótox de la cara</div>
+		<div>Feminismo: Verás nuestra ira reflejada en las Pussy Riots, ¡machista!</div>
+		<div>Colectivo LGTB: Estados Unidos es un país libre, no heteropatriarcal</div>
+		<div>Cambio climático: Convertiré tus centrales nucleares en reservas naturales</div>
+		<div>Prensa libre: Publicaremos fake news sobre lo que gastas en pelucas</div>
+		<div>Comenzar
+</div>
+		<div>ONU: Acéptalo, Palestina es un Estado al que defenderemos de tu autoritarismo</div>
+		<div>CIA: Destaparemos tus encuentros nocturnos con tu aliado Putin</div>
+
+	</div>
+
+	<!-- end text content: -->
+
+  </body>
+</html>
